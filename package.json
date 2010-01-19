@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "author": "",
+    "name": "Reform",
+    "author": "Nick Fitzgerald",
+    "description": "A Narwhal module for working with HTML forms, similar to Django's forms.",
     "dependencies": [],
     "contributors": []
 }
