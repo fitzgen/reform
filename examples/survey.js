@@ -40,6 +40,8 @@ exports.app = function (env) {
         }
     }
 
+    resp.write('<form method="POST">');
     resp.write(form.toHtml("div"));
+    resp.write('</form>');
     return resp.finish();
 };
