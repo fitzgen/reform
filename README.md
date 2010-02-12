@@ -1,3 +1,3 @@
-For a quick example check this out:
+For a quick intro check this out:
 
-http://github.com/fitzgen/reform/blob/master/examples/survey.js
+[Survey Example!](http://github.com/fitzgen/reform/blob/master/examples/survey.js)
