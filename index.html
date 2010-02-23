@@ -90,6 +90,10 @@ if (REFORM.Form({ name: REFORM.TextField() })
         example</a>.
       </p>
 
+      <h2>Writing custom form fields</h2>
+
+      <p>TODO</p>
+
       <h2>Customizing the rendered HTML of forms and fields</h2>
 
       <p>
@@ -151,11 +155,62 @@ js> form.toHtml()
          value="" />
 &lt;/div></pre>
 
-      <h2>Authors</h2>
-      <p>Nick Fitzgerald (fitzgen@gmail.com)</p>
+      <h2>Form properties</h2>
 
-      <h2>Contact</h2>
-      <p>Nick Fitzgerald (fitzgen@gmail.com)</p>
+      <dl>
+
+        <dt><code>form.fields</code></dt>
+        <dd>
+          An object containing the fields that make up this form. This is where
+          the argument that you pass to the <code>Form</code> constructor gets
+          stored.
+        </dd>
+
+        <dt><code>form.isBound</code></dt>
+        <dd>
+          A boolean reflecting whether or not this form has been bound to data
+          yet. See <code>form.bindData()</code> for more information.
+        </dd>
+
+        <dt><code>form.prefix</code></dt>
+        <dd>
+          A string that will be concatenated to each fields' name when rendering
+          to avoid namespace collisions when rendering multiple clones of the
+          same field to one HTML page. Defaults to an empty string. See
+          also <code>form.clone()</code>.
+        </dd>
+
+        <dt><code>form.errors</code></dt>
+        <dd>
+          Only exists after you call <code>form.isValid()</code> and only if
+          there are validation errors. This is an object where each property
+          name corresponds to a field in <code>form.fields</code> and the
+          property's value is a validation error message as a string.
+        </dd>
+
+        <dt><code>form._name</code></dt>
+        <dd>
+          String. Used for the <code>toString</code> representation of a
+          form. Defaults to "Form".
+        </dd>
+
+      </dl>
+
+      <h2>Form methods</h2>
+
+      <p>TODO</p>
+
+      <h2>Field properties</h2>
+
+      <p>TODO</p>
+
+      <h2>Field methods</h2>
+
+      <p>TODO</p>
+
+      <h2>Authors</h2>
+
+      <p><a href="http://fitzgeraldnick.com/">Nick Fitzgerald</a></p>
 
       <h2>MIT Licensed</h2>
 
