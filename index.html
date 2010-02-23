@@ -55,7 +55,7 @@
       </p>
 
       <h2>Hello, Form!</h2>
-      <pre>var REFORM = require("reform");
+      <pre class="sh_javascript">var REFORM = require("reform");
 
 // Define a form by describing the data, not almost arbitrary HTML.
 var helloForm = REFORM.Form({
@@ -75,7 +75,7 @@ if (helloForm.isValid()) {
         wanted to be cool and do everything in as few keystrokes as possible:
       </p>
 
-      <pre>var REFORM = require("reform");
+      <pre class="sh_javascript">var REFORM = require("reform");
 
 if (REFORM.Form({ name: REFORM.TextField() })
           .bindData(unvalidatedData)
@@ -104,7 +104,7 @@ if (REFORM.Form({ name: REFORM.TextField() })
         them, just inspect the default templates in a REPL session.
       </p>
 
-      <pre>$ js
+      <pre class="sh_javascript">$ js
 Rhino 1.7 release 3 PRERELEASE 2009 12 12
 js> reform = require("reform")
 [object Object]
@@ -140,7 +140,7 @@ js> form.toHtml()
         name as an argument to <code>form.toHtml</code>.
       </p>
 
-      <pre>js> form.toHtml("div")
+      <pre class="sh_javascript">js> form.toHtml("div")
 &lt;div>
   &lt;label for="id_name">Name&lt;/label>
   &lt;p class='form-help-text'>Please enter your name.&lt;/p>
