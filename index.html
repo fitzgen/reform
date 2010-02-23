@@ -68,6 +68,21 @@ if (helloForm.isValid()) {
     print("Hello, " + helloForm.cleanedData.name + "!");
 }</pre>
 
+      <p>
+        Pretty easy, no? But check this out: just about every method call is
+        chainable (where it makes sense). We can rewrite that example if we
+        wanted to be cool and do everything in as few keystrokes as possible:
+      </p>
+
+      <pre>var REFORM = require("reform");
+
+if (REFORM.Form({ name: REFORM.TextField() })
+          .bindData(unvalidatedData)
+          .isValid())
+{
+    print("Hello, " + helloForm.cleanedData.name + "!");
+}</pre>
+
       <h2>Authors</h2>
       <p>Nick Fitzgerald (fitzgen@gmail.com)</p>
 
