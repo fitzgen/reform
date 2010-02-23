@@ -7,6 +7,7 @@
     <title>Reform</title>
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="sh_darkness.min.css" type="text/css" />
 
   </head>
 
@@ -95,9 +96,12 @@ if (REFORM.Form({ name: REFORM.TextField() })
         This is as easy as defining a template and binding it
         to <code>field.template</code> for whichever field you wish to
         customize. Forms don't have their own templates, they are represented in
-        HTML as just the sum of their fields' rendered markup. To get an idea of
-        what the templates should look like and how to use them, just inspect
-        the default templates in a REPL session.
+        HTML as just the sum of their fields' rendered markup.
+      </p>
+
+      <p>
+        To get an idea of what the templates should look like and how to use
+        them, just inspect the default templates in a REPL session.
       </p>
 
       <pre>$ js
@@ -184,6 +188,9 @@ js> form.toHtml()
       </p>
 
     </div>
+
+    <script type="text/javascript" src="sh_main.min.js"></script>
+    <script type="text/javascript" src="sh_javascript.min.js"></script>
 
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
