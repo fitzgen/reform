@@ -1,6 +1,6 @@
 body {
     margin-top: 1.0em;
-    background-color: #a6eed3;
+    background-color: #B6FEF3;
     font-family: "Helvetica,Arial,FreeSans";
     color: #000000;
 }
@@ -60,8 +60,6 @@ hr {
     border-bottom: 1px solid #aaa;
 }
 
-.footer {
-    text-align:center;
-    padding-top:30px;
-    font-style: italic;
+pre, code {
+    font-size:1.25em;
 }
