@@ -42,7 +42,7 @@
       <p>
         First, <a href="http://narwhaljs.org/quick-start.html">install Narwhal</a>.
       </p>
-      
+
       <p>
         Once you have Narwhal up and running, just use <code>tusk</code>:
       </p>
@@ -52,6 +52,21 @@
       <p>
         And you're ready to go!
       </p>
+
+      <h2>Hello, Form!</h2>
+      <pre>var REFORM = require("reform");
+
+// Define a form by describing the data, not almost arbitrary HTML.
+var helloForm = REFORM.Form({
+    name: REFORM.TextField()
+});
+
+// Get some unvalidated data from somewhere, maybe an HTTP POST.
+helloForm.bindData(unvalidatedData);
+
+if (helloForm.isValid()) {
+    print("Hello, " + helloForm.cleanedData.name + "!");
+}</pre>
 
       <h2>Authors</h2>
       <p>Nick Fitzgerald (fitzgen@gmail.com)</p>
