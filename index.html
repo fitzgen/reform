@@ -90,6 +90,76 @@ if (REFORM.Form({ name: REFORM.TextField() })
         example</a>.
       </p>
 
+      <h2>Pre-defined Fields</h2>
+
+      <p>
+        All form fields are require-able from Reform's top level namespace. For
+        example, <code>var TextField = require("reform").TextField</code>.
+      </p>
+
+      <dl>
+
+        <dt><code>TextField</code></dt>
+        <dd>A field that takes arbitrary text input. Renders as an <code>input
+        type="text"</code></dd>
+
+        <dt><code>TextAreaField</code></dt>
+        <dd>The same as a <code>TextField</code>, but renders to
+        a <code>textarea</code></dd>
+
+        <dt><code>EmailField</code></dt>
+        <dd>A field that validates that the input is a valid email. Renders as
+        an <code>input type="text"</code></dd>
+
+        <dt><code>PasswordField</code></dt>
+        <dd>A field that takes arbitrary text input, but hides it visually
+        because it is an <code>input type="password"</code>.</dd>
+
+        <dt><code>IntegerField</code></dt>
+        <dd>A text input whose validated data will be coerced to a number via
+        <code>parseInt</code> (base 10), and throws a validation error if there
+        are any non digit characters in the input.</dd>
+
+        <dt><code>Button</code></dt>
+        <dd>A simple submit button.</dd>
+
+      </dl>
+
+      <h2>Pre-defined multiple choice fields</h2>
+
+      <p>
+        Multiple choice fields are also require-able from Reform's top level
+        namespace and behave almost identically to other types of fields. The
+        only difference is specifying the choices. To define the available
+        choices, pass a list of <code>[&lt;value>, &lt;label>]</code> pairs to
+        the form's initial options. For example:
+      </p>
+
+      <pre>var seasons = require("reform").DropdownField({
+    choices: [
+        ["su", "Summer"],
+        ["f", "Fall"],
+        ["w", "Winter"],
+        ["sp", "Spring"]
+    ]
+})</pre>
+
+      <dl>
+
+        <dt><code>RadioChoiceField</code></dt>
+        <dd>A multiple choice field where only one option may be
+        selected. Renders to radio buttons.</dd>
+
+        <dt><code>DropdownField</code></dt>
+        <dd>A multiple choice field where only one option may be
+        selected. Renders to a dropdown menu.</dd>
+
+        <dt><code>CheckMultipleField</code></dt>
+        <dd>A multiple choice field where more than one option can be
+        selected. Renders as checkboxes.</dd>
+
+      </dl>
+
       <h2>Writing custom form fields</h2>
 
       <p>TODO</p>
